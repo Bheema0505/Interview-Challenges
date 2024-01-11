@@ -44,6 +44,7 @@ template.innerHTML = `
     }
     #benefits{
       font-size: 12px;
+      min-height: 70px !important;
     }
     </style>
     <div id="cont">
