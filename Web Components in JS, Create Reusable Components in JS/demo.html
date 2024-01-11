@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+      h2 {
+        color: goldenrod;
+      }
+      #cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+      }
+      card-tile {
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Fruit Components (React kind of implementation)</h2>
+    <div id="cards">
+      <card-tile
+        name="Apple"
+        imgsrc="https://img.freepik.com/premium-vector/cute-red-apple-fruit-sticker-digital-illustration-apple-vector_704771-218.jpg?w=2000"
+        price=" ₹ 20"
+        buystatus="Un sold"
+      >
+        <span slot="benefits">
+          Apples are rich in fiber, promoting digestive health, and they contain
+          antioxidants that may contribute to heart health, reducing the risk of
+          chronic diseases.</span
+        >
+      </card-tile>
+      <card-tile
+        name="Water Melon"
+        imgsrc="https://img.freepik.com/free-photo/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view_639032-1254.jpg?t=st=1704790447~exp=1704791047~hmac=23ab889751382781cab98337395a7a4da8cb5ffffc352151e0717c1ff2ba9a25"
+        price=" ₹ 90"
+        buystatus="Un sold"
+      >
+        <span slot="benefits"
+          >Watermelon is a hydrating fruit rich in vitamins A and C, promoting
+          skin health and providing antioxidants for overall well-being.
+          Additionally, its high water content supports hydration and may aid in
+          digestion.</span
+        >
+      </card-tile>
+      <card-tile
+        name="Orange"
+        price=" ₹ 80"
+        imgsrc="https://img.freepik.com/free-vector/realistic-orange-splash-fruit_52683-65283.jpg?size=338&ext=jpg&ga=GA1.2.760664515.1704787521&semt=sph"
+        buystatus="unsold"
+      >
+        <span slot="benefits"
+          >Oranges are rich in vitamin C, promoting a healthy immune system and
+          skin, while also providing antioxidants that may help reduce the risk
+          of chronic diseases. Additionally, their fiber content supports
+          digestive health.</span
+        >
+      </card-tile>
+      <card-tile
+        name="Guava"
+        price=" ₹ 50"
+        imgsrc="https://img.freepik.com/premium-photo/guava-fruit-with-leaf-isolated-white-background-clipping-path_252965-489.jpg?size=626&ext=jpg&ga=GA1.1.760664515.1704787521&semt=sph"
+        buystatus="Not Sold"
+      >
+        <span slot="benefits"
+          >Guava fruits are rich in vitamin C, aiding immune function and
+          collagen production, while also providing dietary fiber for digestive
+          health. Additionally, they contain antioxidants that contribute to
+          overall well-being.</span
+        >
+      </card-tile>
+    </div>
+    <script src="Component.js"></script>
+  </body>
+</html>
