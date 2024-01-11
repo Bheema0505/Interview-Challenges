@@ -46,6 +46,9 @@ template.innerHTML = `
       font-size: 12px;
       min-height: 70px !important;
     }
+    #buy:disabled {
+      background-color: gray;
+    }
     </style>
     <div id="cont">
       <h3>Product ID</h3>
@@ -78,6 +81,13 @@ class Card extends HTMLElement {
     this.shadowRoot.querySelector("img").src = this.getAttribute("imgsrc");
     this.shadowRoot.querySelector("p").innerText =
       this.getAttribute("buystatus");
+    console.log(this.getAttribute("buystatus"));
+    if (this.getAttribute("buystatus") === "Not Available") {
+      console.log("inside if");
+      this.shadowRoot
+        .querySelector('button[id="buy"]')
+        .setAttribute("disabled", "true");
+    }
   }
   // Perform actions or setup when the element is inserted into the DOM
   connectedCallback() {
